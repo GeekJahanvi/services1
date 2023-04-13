@@ -6,7 +6,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import { Request, Response } from 'express';
-import { QueryResult } from 'pg';
 import Queries from '../../graphql/delete_user/queries';
 import Mutations from '../../graphql/delete_user/mutations';
 import Common from '../../commons';
@@ -38,10 +37,10 @@ interface GetPublicIdResponse {
   idError: string | null;
 }
 
-interface DeleteDoctorResponse {
-  deletedData: QueryResult;
-  deletedError: string | null;
-}
+// interface DeleteDoctorResponse {
+//   deletedData: QueryResult;
+//   deletedError: string | null;
+// }
 
 interface Input {
   input?: {
